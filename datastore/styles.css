@@ -1,0 +1,14 @@
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    width: 300px;
+    height: 240px;
+    background-color: Silver;
+}
+
+.flex-item {
+    background-color: DeepSkyBlue;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}

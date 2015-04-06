@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title>PseudoReddit</title>
+	<link rel="stylesheet" href="assets/styles.css" type="text/css">
+</head>
+<body class="flex-container">
+	<div class="flex-item">
+	{{range .}}
+	{{with .Author}}
+	<p><b>{{.}}</b>:</p>
+	{{else}}
+	<p>An anonymous person:</p>
+	{{end}}
+	<pre>{{.Content}}</pre>
+	{{end}}
+
+	<form action="/sign" method="post">
+		<div><textarea name="content" rows="3" cols="60"></textarea></div>
+		<div><input type="submit" value="Submit Post"></div>
+	</form>
+	</div>
+</body>
+</html>
